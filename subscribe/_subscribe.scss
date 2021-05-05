@@ -1,0 +1,49 @@
+.subscribe {
+    @include display;
+    justify-content: center;
+    width: 1920px;
+    height: 374px;
+    background: #e5e5e5;
+    .subscribe__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 730px; 
+        height: 177px;
+        .content__header {
+            @include family;
+            font-size: 18px;
+            font-weight: 600;            
+        }
+        .content__text {
+            @include family;
+            font-size: 16px;
+            font-weight: 400;
+            color: #999999;
+            margin-top: 20px;
+        }
+        .content__button {            
+            position: relative;
+            width: 100%;
+            text-align: center;                            
+            .input {
+                position: absolute;
+                width: 117px;
+                height: 17px;
+                left: 140px;
+                top: 20px;
+            }
+            .subscribe__button {
+                position: absolute;
+                right: 100px;
+            }     
+        }
+        .content__text2 {
+            @include family;
+            font-size: 13px;
+            font-weight: 400;
+            color: #999999;
+            margin-top: 15px;
+        }
+    }
+}

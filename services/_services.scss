@@ -1,0 +1,94 @@
+@mixin icon {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;            
+    .image2 {               
+        .ellips1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #E5E5E5;
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            &:hover {border:2px solid #018afa ;}
+            .ellips2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin: 9px;
+                border: 1px solid #4985FF;
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                &:hover {border:2px solid #018afa ;}                    
+            }
+        }
+    }
+    .header2-1 {
+        width: 226px;
+        height: 23px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        margin-top: 46px;
+        margin-left: 29px;
+    }
+    .text2-1 {
+        width: 222px;
+        height: 58px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #999999;
+        margin-left: 29px;
+        margin-top: 12px;
+    }    
+}
+.services {
+    width: 1113px;
+    height: 488px;
+    margin-top: 110px;
+    margin-bottom: 105px;
+    @include display;
+    .services__header {
+        width: 739px;
+        height: 88px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 52.62px; 
+        @include text;
+    }
+    .services__text {
+        width: 730px;
+        height: 41px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.36px;
+        color: #999999;
+        margin-top: 50px;
+        @include text;        
+    }
+    .elementes {
+        display: flex;
+        flex-direction: row;
+        .elementes__section1 {
+            @include icon();            
+        }
+        .elementes__section2 {
+            @include icon();
+        }
+        .elementes__section3 {
+            @include icon();
+        }
+    }
+    .button2 {
+        @extend.button1;
+        margin-top: 55px;
+    }
+}

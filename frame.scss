@@ -1,0 +1,119 @@
+@mixin display {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+@mixin text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+@mixin family {
+    font-family: 'Montserrat', sans-serif;    
+}
+@mixin footer {
+    @include family;
+    font-size: 18px;
+    font-weight: 600;
+}
+.button1 {
+    width: 200px;
+    height: 45px;
+    background: #4985ff;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    &:hover {
+    background: green;
+    }
+    &:active {
+    background: rgb(132, 212, 132);
+    }
+}
+.frame {
+    @include display();
+    width: 1920px;
+    .first-screen {
+        display: flex;
+        flex-direction: column;
+        width: 1920px;
+        height: 900px;
+        background: url(image1.png);
+        .header {
+            display: flex;
+            flex-direction: row;  
+            // border: 1px solid green;
+            padding-top: 40px;   
+            padding-left: 932px;        
+            .nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-left: 20px;
+                width: 583px;
+                height: 59px;
+                // border:1px solid red;
+                #naw__link {
+                    text-decoration: none;
+                    color: #ffffff;
+                    font-size: 16px;
+                    line-height: 19.5px;                   
+                }                
+            }
+        }
+    }
+    .line {
+        color: #ffffff;
+        width: 107px;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin-left: 932px;
+    }
+    .line2 {
+        margin-top: 0%;
+        width: 100%;
+        opacity: 50%;
+    }
+    .content {
+        @include display();
+        .title {
+            @include text();
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 19.5px;
+            width: 175px;
+            height: 20px;
+            margin-top: 220px;
+            margin-bottom: 20px;  
+        }
+        .caption {
+            font-family: 'Montserrat', sans-serif;
+            @include text();
+            font-style: bold;
+            font-weight: 800;
+            font-size: 48px;
+            color: #ffffff;
+            width: 829px;
+            height: 111px; 
+            margin-bottom: 50px;
+        }
+    }
+    //services
+    @import "services/services";
+    //about_us
+    @import "about-us/about-us";
+    //all-services
+    @import "all-services/all-services";
+    //all-projects
+    @import "all-projects/all-projects";
+    //video
+    @import "video/video";
+    //subscribe
+    @import "subscribe/subscribe";
+    //footer
+    @import "footer/footer";        
+}
+

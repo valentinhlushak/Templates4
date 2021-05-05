@@ -1,0 +1,40 @@
+.all-projects {
+    @include display;
+    width: 1920px;
+    height: auto;
+    background: #F6F6F8;   
+    .all-projects__header {
+        width: 350px;
+        height: 35px;
+        @include family;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 52.66px;        
+        font-size: 30px;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .all-projects__text {
+        width: 730px;
+        height: 41px;
+        @include family;        
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25.36px;        
+        color: #999999;
+        margin-bottom: 70px;
+    }
+    .all-projects__images {
+        width: 1110px;
+        display: inline-flex;       
+        justify-content: space-between;
+        margin-left: 405px;
+        margin-right: 405px;
+    }
+    .all-projects__button {
+        @extend .button1;
+        margin-top: 50px;
+        margin-bottom: 130px;        
+    }
+}

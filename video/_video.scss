@@ -1,0 +1,38 @@
+.video {
+    background: url(video.png) no-repeat 0 0 #E5E5E5;
+    width: 1920px;
+    height: 735px;
+    @include display;
+    position: relative;
+    .video__header {
+        @include family;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 52.66px;
+        color: #ffffff;
+        margin-bottom: 30px;
+        margin-top: 70px;
+    }
+    .video__text {
+        @include family;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.36px;
+        color: #ffffff;
+        margin-bottom: 70px;        
+    }
+    // .video-position { 
+    //     .position__relativ{                   
+    //         .video_play_button {
+    //         }
+    //     }
+    // }
+    .video__line {
+        position: absolute;
+        bottom: 0;
+        border: none;
+        width: 1110px;
+        height: 2px;
+        background-color: #c7c7c7;
+    }
+}
